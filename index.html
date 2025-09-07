@@ -202,7 +202,7 @@
 
             <div class="resume-item pb-0">
               <h4>Asad Mughal</h4>
-              <p><em>Passionate Graphic Designer and visual storyteller specialised in branding, social media content, and product photography. Available for freelance projects. (Resume uploaded)</em></p>
+              <p><em>Passionate graphic designer and visual storyteller specialised in branding, social media content, and product photography. Available for freelance projects. (Resume uploaded)</em></p>
               <ul>
                 <li>Gujranwala, Pakistan</li>
                 <li>03211083092</li>
@@ -256,7 +256,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Here Are My Some Project Which I Just Done.</p>
+        <p>Selected works — replace the image files in assets/img/masonry-portfolio/ with your own images (masonry-portfolio-1.jpg … masonry-portfolio-20.jpg).</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -706,31 +706,46 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/923211083092" class="whatsapp-float" target="_blank">
-  <i class="bi bi-whatsapp"></i>
-</a>
 
-<style>
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50%;
-  padding: 12px 14px;
-  font-size: 24px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  z-index: 999;
-  transition: background 0.3s;
-}
-.whatsapp-float:hover {
-  background-color: #20b358;
-  color: #fff;
-}
-</style>
-  
+  <!-- WhatsApp Floating Button (bottom-left) -->
+  <a href="https://wa.me/923211083092" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      padding: 12px 14px;
+      font-size: 24px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      z-index: 9999;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    .whatsapp-float:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+      color: #fff;
+    }
+    /* Slightly larger on small screens for easier tapping */
+    @media (max-width: 576px) {
+      .whatsapp-float {
+        bottom: 18px;
+        left: 18px;
+        font-size: 28px;
+        padding: 14px 16px;
+      }
+    }
+  </style>
+
 </body>
 
 </html>
